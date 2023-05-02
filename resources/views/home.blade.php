@@ -3,10 +3,17 @@
 @section('page.main')
     <div class="container">
         <h1>main homepage</h1>
-        <ul>
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
             @foreach ($comic as $item)
-                <li> {{$item['title']}}</li>
+                <div class="card col-2">
+                    <div class="card-body">
+                        <p class="card-title"><strong>{{ $item['series'] }}</strong></p>
+                    </div>
+                </div>
             @endforeach
-        </ul>
+            </div>
     </div>
+    <section>
+
+    </section>
 @endsection
