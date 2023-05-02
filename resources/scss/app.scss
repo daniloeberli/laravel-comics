@@ -2,11 +2,58 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
+
 body {
     font-family: 'Lato', sans-serif;
+
+}
+
+li{
+    list-style: none;
 }
 
 
+header{
+
+    nav{
+        width: 90%;
+
+        ul{
+            justify-content: space-between;
+        }
+    }
+}
+
+
+main{
+    background-color: #1c1c1c;
+    padding-top: 60px;
+    position: relative;
+
+
+    .container{
+        .load {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 60px;
+                background-color: #0282f9;
+            }
+        }
+        h3 {
+            color: white;
+            position: absolute;
+            top: -25px;
+            left: 150px;
+            padding: 15px 25px;
+            background-color: #0282f9;
+        }
+    }
+}
 
 footer{
 
