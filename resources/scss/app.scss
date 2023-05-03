@@ -16,12 +16,20 @@ li{
 
 header{
 
+    .header-top{
+        height: 30px;
+        background-color: #0282f9;
+    }
     nav{
         width: 90%;
 
         ul{
             justify-content: space-between;
         }
+    }
+
+    li:hover{
+        cursor: pointer;
     }
 }
 
@@ -69,9 +77,16 @@ main{
     }
 
     .single-comic{
+        img{
+            max-width: 200px;
+        }
         h1,p{
             color: white;
         }
+    }
+
+    .specs{
+        background-color: lightgray ;
     }
 }
 
