@@ -13,12 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/comics', function () {
 
     $data = [
         'comic' => config('comics')
     ];
 
 
-    return view('home', $data);
-})->name('home');
+    return view('comics', $data);
+})->name('comics');
+
+
+
+Route::get('/comics/{index}', function ($index) {
+
+    $comic_total = config('comics');
+
+    if($index > count($comic_total) - 1){
+        abort(404);
+    }
+
+    $comic = $comic_total[$index];
+
+    #dd($comic);
+
+    return view('comic', compact('comic'));
+})->name('comic')->where('index','[0-9]+');

@@ -33,6 +33,20 @@ main{
 
 
     .container{
+
+
+        .card{
+            border-color: #1c1c1c;
+        }
+            
+        .card-body{
+            background-color: #1c1c1c;
+        }
+
+        .card-title{
+            color: white;
+        }
+
         .load {
             display: flex;
             justify-content: center;
@@ -51,6 +65,12 @@ main{
             left: 150px;
             padding: 15px 25px;
             background-color: #0282f9;
+        }
+    }
+
+    .single-comic{
+        h1,p{
+            color: white;
         }
     }
 }
