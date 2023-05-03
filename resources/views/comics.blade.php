@@ -8,7 +8,7 @@
                 <div class="card col-2" style="min-height: 18rem">
                     <img class="card-img-top img-fluid" src="{{$item['thumb']}}" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-title"><strong>{{ $item['series'] }}</strong></p>
+                        <p class="card-title"><strong><a href="{{ route('comic', ['index' => $loop->index]) }}">{{ $item['series'] }}</a></strong></p>
                     </div>
                 </div>
             @endforeach

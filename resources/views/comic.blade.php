@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('page.main')
 
@@ -10,7 +10,7 @@
         </div>
         <div >
             <!--foto da cambiare-->
-            <img class="img-fluid" src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+            <img class="img-fluid" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
         </div>
     </div>
     <div class="specs">
@@ -19,11 +19,19 @@
                 <h4>Talent</h4>
                 <div class="d-flex">
                     <h5>Art by</h5>
-                    <p>artisti</p>
+                    <p>
+                        @foreach ($comic['artists'] as $artist)
+                            {{$artist}}
+                        @endforeach
+                    </p>
                 </div>
                 <div class="d-flex">
                     <h5>Written by</h5>
-                    <p>scrittori</p>
+                    <p>
+                        @foreach ($comic['writers'] as $writer)
+                        {{$writer}}
+                        @endforeach
+                    </p>
                 </div>
             </div>
             <div class="specs w-50">

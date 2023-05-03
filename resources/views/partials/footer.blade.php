@@ -72,5 +72,15 @@
             </div>
         </div>
     </div>
-    
+    <div class="footer-bottom">
+        <div class="bottom-container">
+            <div class="sign-btn">
+                <h4>SIGN UP NOW</h4>
+            </div>
+            <div class="follow">
+                <h4>FOLLOW US</h4>
+                <img src="{{ Vite::asset('resources/img/footer-facebook.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
 </footer>
